@@ -59,6 +59,10 @@ button{
     min-width: 230px;
     background-color: #000000;
 }
+
+.scrollbar .logo img{
+    margin-bottom: 30px;
+}
 /* fine scrollbar laterale */
 
 
@@ -77,7 +81,6 @@ button{
 
 .album .menù-links{
     padding-top: 70px;
-    max-width: 620px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -222,6 +225,11 @@ footer .container-media p{
         gap: 5px;
         width: 240px;
     }
+
+    .menù-links ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /* versione tablet */
@@ -246,5 +254,10 @@ footer .container-media p{
         display: flex;
         gap: 5px;
         width: 240px;
+    }
+
+    .menù-links ul{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
