@@ -29,6 +29,31 @@ span{
 /* fine container */
 
 
+/* barra fissa upgrade */
+.upgrade{
+    background-color: #080b12;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#button{
+    position: absolute;
+    right: 230px;
+    top: 25px;
+}
+
+button{
+    padding: 10px 40px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+}
+/* fine barra fissa upgrade */
+
+
 /* scrollbar laterale */
 .scrollbar{
     min-width: 230px;
@@ -42,6 +67,7 @@ span{
     background-color: #141922;
     height: calc(100vh - 90px);
     overflow-y: scroll;
+    width: 100%;
 }
 
 .container-big-album{
@@ -75,29 +101,65 @@ h1{
 /* fine album */
 
 
-/* barra fissa upgrade */
-.upgrade{
-    background-color: #080b12;
-    height: 90px;
+/* inizo stilizzazione sezione album prima fila */
+.played-first-row{
+    display: flex;
+    gap: 15px;
+}
+
+.image-album img{
     width: 100%;
-    position: fixed;
-    z-index: 10;
 }
 
-#button{
-    position: absolute;
-    right: 230px;
-    top: 25px;
+.album-text{
+   text-align: center; 
 }
 
-button{
-    padding: 10px 40px;
-    background-color: transparent;
+.album-text h2{
     color: white;
-    border-color: white;
-    border-radius: 20px;
 }
-/* fine barra fissa upgrade */
+
+.album-text h3{
+    color: #7d7f84;
+    font-size: 10px;
+}
+/* fine stilizzazione sezione album prima fila*/
+
+
+/* inizo stilizzazione sezione album seconda fila */
+.played-second-row{
+    display: flex;
+    gap: 15px;
+}
+
+#second-title{
+    margin-bottom: 10px;
+}
+
+h3{
+    color: #7d7f84;
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+/* inizo stilizzazione sezione album seconda fila */
+
+
+/* inizo stilizzazione sezione album terza fila */
+.played-third-row{
+    display: flex;
+    gap: 15px;
+}
+
+#third-title{
+    margin-bottom: 10px;
+}
+
+h3{
+    color: #7d7f84;
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+/* inizo stilizzazione sezione album terza fila */
 
 
 /* container media navbar */
