@@ -4,3 +4,35 @@
     box-sizing: border-box;
 }
 /* reset */
+
+
+/* container */
+.container{
+    display: flex;
+    /* height: 100vw; */
+}
+/* fine container */
+
+
+/* scrollbar laterale */
+.scrollbar{
+    max-width: 230px;
+    background-color: #000000;
+}
+/* fine scrollbar laterale */
+
+
+/* album */
+.album{
+    background-color: #141922;
+}
+/* fine album */
+
+
+/* container media navbar */
+.container-media{
+    height: 90px;
+    margin: 0 auto;
+    background-color: #282828;
+}
+/* fine container medi navbar */
