@@ -63,6 +63,44 @@ button{
 .scrollbar .logo img{
     margin-bottom: 30px;
 }
+
+.home{
+    padding-left: 22px;
+}
+
+.home ul li{
+    color: #6d6d6d;
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.home ul li i{
+    font-size: 22px;
+}
+
+.playlist{
+    padding-left: 22px;
+}
+
+.playlist h3{
+    color: white;
+    font-size: 14px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.playlist button{
+    padding: 1px 10px;
+    border-radius: 0px;
+    background-color: #6d6d6d;
+    border-color: transparent;
+    color: black;
+    font-size: 35px;
+}
+
+span{
+    padding-left: 10px;
+}
 /* fine scrollbar laterale */
 
 
