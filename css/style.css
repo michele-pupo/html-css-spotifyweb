@@ -111,7 +111,7 @@ h1{
 
 .image-album img{
     width: 100%;
-    max-height: 130px;
+    max-height: 110px;
 }
 
 .album-text{
@@ -139,7 +139,7 @@ h1{
 
 .played-second-row .image-album img{
     width: 100%;
-    max-height: 130px;
+    max-height: 110px;
 }
 
 #second-title{
@@ -163,7 +163,7 @@ h3{
 
 .played-third-row .image-album img{
     width: 100%;
-    max-height: 130px;
+    max-height: 110px;
     border-radius: 65px;
 }
 
@@ -205,7 +205,20 @@ footer .container-media p{
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
-        width: calc(100% / 3 * 3 - 45px);
+        width: calc(100% / 3 * 3);
+        justify-content: flex-start;
+    }
+}
+
+/* versione tablet */
+@media screen and (max-width: 768px) {
+
+    /* album prima fila */
+    .played-first-row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: calc(100% / 2 * 2);
         justify-content: flex-start;
     }
 }
