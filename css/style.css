@@ -6,10 +6,20 @@
 /* reset */
 
 
+/* regole da eliminare */
+p{
+    color: white;
+}
+
+span{
+    color: white;
+}
+/* fine regole da eliminare */
+
+
 /* container */
 .container{
     display: flex;
-    /* height: 100vw; */
 }
 /* fine container */
 
@@ -25,13 +35,32 @@
 /* album */
 .album{
     background-color: #141922;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.album p{
+    padding-top: 110px;
 }
 /* fine album */
 
 
-/* container media navbar */
-.container-media{
+/* barra fissa upgrade */
+.upgrade{
+    background-color: #080b12;
     height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+/* fine barra fissa upgrade */
+
+/* container media navbar */
+footer .container-media{
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     margin: 0 auto;
     background-color: #282828;
 }
