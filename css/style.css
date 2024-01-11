@@ -198,12 +198,14 @@ footer .container-media p{
 
 /* media query*/
 /* versione laptop */
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
 
     /* album prima fila */
     .played-first-row{
         display: flex;
+        flex-wrap: wrap;
         gap: 15px;
-        justify-content: space-between;
+        width: calc(100% / 3 * 3 - 45px);
+        justify-content: flex-start;
     }
 }
