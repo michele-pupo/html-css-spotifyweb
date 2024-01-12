@@ -26,6 +26,15 @@ span{
     width: 150px;
     padding: 20px 0px 0px 20px;
 }
+
+.logo-mobile{
+    display: none;
+}
+
+.logo-mobile img{
+    width: 50px;
+    padding: 20px 0px 0px 20px;
+}
 /* fine container */
 
 
@@ -76,6 +85,10 @@ button{
 
 .home ul li i{
     font-size: 22px;
+}
+
+.home ul li span{
+    color: #6d6d6d;
 }
 
 .playlist{
@@ -318,5 +331,43 @@ footer .container-media p{
     .menù-links ul{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+/* versione mobile */
+@media screen and (max-width: 480px){
+    .scrollbar{
+        min-width: 60px;
+    }
+
+    .scrollbar .logo-mobile{
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .scrollbar .logo-mobile img{
+        font-size: 10px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .home ul li span{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .playlist-name{
+        display: none;
+    }
+
+    #button{
+        position: absolute;
+        right: 60px;
+        top: 25px;
     }
 }
