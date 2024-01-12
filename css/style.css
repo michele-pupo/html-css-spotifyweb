@@ -75,6 +75,18 @@ button{
     padding-bottom: 5px;
 }
 
+#home:hover{
+    border-left: solid 4px #81b71a;
+}
+
+#search:hover{
+    border-left: solid 4px #81b71a;
+}
+
+#librery:hover{
+    border-left: solid 4px #81b71a;
+}
+
 #home img, 
 #search img,
 #librery img{
@@ -84,8 +96,20 @@ button{
 #home h6,
 #search h6,
 #librery h6{
-    color: white;
+    color: rgba(153, 153, 153, .7);
     font-size: 10px;
+}
+
+#home h6:hover{
+    color: white;
+}
+
+#search h6:hover{
+    color: white;
+}
+
+#librery h6:hover{
+    color: white;
 }
 
 .playlist{
@@ -113,10 +137,18 @@ button{
     font-size: 25px;
 }
 
+.playlist .create button:hover{
+    color: white;
+}
+
 h6{
     font-size: 12px;
     color: #6d6d6d;
     padding-left: 10px;
+}
+
+h6:hover{
+    color: white;
 }
 
 .playlist-name{
@@ -127,10 +159,24 @@ h6{
 }
 
 .playlist-name ul li{
-    color: #6d6d6d;
+    color: rgba(153, 153, 153, .7);
     list-style-type: none;
     padding-top: 17px;
     font-size: 10px;
+}
+
+.playlist-name ul li a:hover{
+    padding-left: 10px;
+    border-left: solid 4px #81b71a;
+}
+
+.playlist-name ul li a{
+    color: rgba(153, 153, 153, .7);
+    text-decoration: none;
+}
+
+.playlist-name ul li a:hover{
+    color: white;
 }
 
 .install{
@@ -151,7 +197,7 @@ h6{
 .download img{
     margin-left: 12px;
     width: 16px;
-    color: #6d6d6d;
+    color: rgba(153, 153, 153, .7);
 }
 
 hr{
@@ -176,7 +222,6 @@ hr{
 .artist h6{
     color: white;
 }
-
 /* fine scrollbar laterale */
 
 
@@ -209,7 +254,11 @@ hr{
 .menù-links ul li a{
     text-decoration: none;
     font-size: 12px;
-    color: #696b70;
+    color: rgba(153, 153, 153, .7);
+}
+
+.menù-links ul li a:hover{
+    color: white;
 }
 
 h1{
@@ -225,6 +274,11 @@ h1{
     display: flex;
     gap: 15px;
     justify-content: space-between;
+}
+
+.image-album{
+    width: 100%;
+    position: relative;
 }
 
 .image-album img{
