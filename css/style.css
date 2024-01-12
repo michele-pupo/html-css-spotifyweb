@@ -88,9 +88,14 @@ button{
     margin-top: 28px;
     margin-bottom: 12px;
 }
+ 
+.create{
+    display: flex;
+    align-items: center;
+}
 
-.playlist button{
-    padding: 1px 10px;
+.playlist .create button{
+    padding: 0px 10px;
     border-radius: 0px;
     background-color: #6d6d6d;
     border-color: transparent;
@@ -98,8 +103,24 @@ button{
     font-size: 35px;
 }
 
-span{
+h6{
+    font-size: 16px;
+    color: #6d6d6d;
     padding-left: 10px;
+}
+
+.playlist-name{
+    padding-left: 22px;
+    margin-top: 20px;
+    height: calc(100vh - 650px);
+    overflow-y: scroll;
+}
+
+.playlist-name ul li{
+    color: #6d6d6d;
+    list-style-type: none;
+    padding-top: 17px;
+    font-size: 15px;
 }
 /* fine scrollbar laterale */
 
