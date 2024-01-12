@@ -379,23 +379,29 @@ footer .container-media p{
 /* versione mobile */
 @media screen and (max-width: 480px){
     .scrollbar{
-        min-width: 60px;
+        min-width: 50px;
     }
 
     .scrollbar .logo-mobile{
         margin-bottom: 20px;
+        margin-right: 30px;
         display: block;
-    }
-
-    .scrollbar .logo-mobile img{
-        font-size: 10px;
     }
 
     .logo{
         display: none;
     }
 
-    .home ul li span{
+    #home,
+    #search,
+    #librery{
+        padding-left: 0px ;
+        justify-content: space-around;
+    }
+
+    #home h6,
+    #search h6,
+    #librery h6{
         display: none;
     }
 
@@ -411,5 +417,15 @@ footer .container-media p{
         position: absolute;
         right: 110px;
         top: 25px;
+    }
+
+    .install .download h6,
+    .artist h6,
+    hr{
+        display: none;
+    }
+
+    .download{
+        margin-top: 445px;
     }
 }
