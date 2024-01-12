@@ -311,13 +311,35 @@ footer .container-media{
     align-items: center;
 }
 
-.album-song{
+.footer-left{
     display: flex;
+    align-items: center;
 }
 
 .album-song img {
     width: 40px;
     margin-left: 10px;
+}
+
+.album-small-text{
+    margin-left: 10px;
+}
+
+.album-small-text h3{
+    color: white;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.album-small-text h4{
+    font-size: 9px;
+    color: #6d6d6d;
+    margin-top: 2px;
+}
+
+.heart{
+    color: #6d6d6d;
+    margin-left: 30px;
 }
 
 /* fine container medi navbar */
@@ -459,6 +481,6 @@ footer .container-media{
     }
 
     .download{
-        margin-top: 445px;
+        margin-top: 465px;
     }
 }
