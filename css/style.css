@@ -5,16 +5,9 @@
 }
 /* reset */
 
-
-/* regole da eliminare */
-p{
-    color: white;
+body{
+    font-family: sans-serif;
 }
-
-span{
-    color: white;
-}
-/* fine regole da eliminare */
 
 
 /* container */
@@ -40,7 +33,7 @@ span{
 
 /* barra fissa upgrade */
 .upgrade{
-    background-color: #080b12;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 90px;
     width: 100%;
     position: fixed;
@@ -49,7 +42,7 @@ span{
 
 #button{
     position: absolute;
-    right: 230px;
+    right: 200px;
     top: 25px;
 }
 
@@ -65,7 +58,7 @@ button{
 
 /* scrollbar laterale */
 .scrollbar{
-    min-width: 230px;
+    min-width: 175px;
     background-color: #000000;
 }
 
@@ -73,31 +66,35 @@ button{
     margin-bottom: 30px;
 }
 
-.home{
-    padding-left: 22px;
+#home, 
+#search,
+#librery{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 5px;
 }
 
-.home ul li{
-    color: #6d6d6d;
-    list-style-type: none;
-    margin-bottom: 12px;
+#home img, 
+#search img,
+#librery img{
+    width: 30px;
 }
 
-.home ul li i{
-    font-size: 22px;
-}
-
-.home ul li span{
-    color: #6d6d6d;
+#home h6,
+#search h6,
+#librery h6{
+    color: white;
+    font-size: 10px;
 }
 
 .playlist{
-    padding-left: 22px;
+    padding-left: 20px;
 }
 
 .playlist h3{
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 28px;
     margin-bottom: 12px;
 }
@@ -108,33 +105,78 @@ button{
 }
 
 .playlist .create button{
-    padding: 0px 10px;
+    padding: 0px 8px;
     border-radius: 0px;
     background-color: #6d6d6d;
     border-color: transparent;
     color: black;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 h6{
-    font-size: 16px;
+    font-size: 12px;
     color: #6d6d6d;
     padding-left: 10px;
 }
 
 .playlist-name{
-    padding-left: 22px;
+    padding-left: 20px;
     margin-top: 20px;
     height: calc(100vh - 650px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .playlist-name ul li{
     color: #6d6d6d;
     list-style-type: none;
     padding-top: 17px;
-    font-size: 15px;
+    font-size: 10px;
 }
+
+.install{
+    padding-left: 10px;
+    margin-top: 180px;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.download h6{
+    font-size: 10px;
+}
+
+.download img{
+    margin-left: 12px;
+    width: 16px;
+    color: #6d6d6d;
+}
+
+hr{
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.artist{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.artist img{
+    margin-left: 10px;
+    background-color: #6d6d6d;
+    border-radius: 50%;
+    width: 25px;
+    height: 23px;
+}
+
+.artist h6{
+    color: white;
+}
+
 /* fine scrollbar laterale */
 
 
@@ -142,7 +184,7 @@ h6{
 .album{
     background-color: #141922;
     height: calc(100vh - 90px);
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 100%;
 }
 
@@ -367,7 +409,7 @@ footer .container-media p{
 
     #button{
         position: absolute;
-        right: 60px;
+        right: 110px;
         top: 25px;
     }
 }
