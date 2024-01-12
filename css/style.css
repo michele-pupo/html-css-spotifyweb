@@ -329,18 +329,33 @@ footer .container-media{
 .album-small-text h3{
     color: white;
     margin: 0px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .album-small-text h4{
-    font-size: 9px;
+    font-size: 7px;
     color: #6d6d6d;
     margin-top: 2px;
 }
 
 .heart{
     color: #6d6d6d;
-    margin-left: 30px;
+    margin-left: 10px;
+}
+
+.music-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.music-bar hr{
+    width: 250px;
+    height: 4px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 2px;
 }
 
 /* footer centrale */
@@ -355,8 +370,12 @@ footer .container-media{
 .music-buttons{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     color: white;
+}
+
+.music-buttons i{
+    font-size: 14px;
 }
 
 .music-buttons .fa-play{
@@ -375,7 +394,35 @@ footer .container-media{
     color: white;
     font-size: 10px;
 }
-/* fine container medi navbar */
+
+
+/* footer destra */
+.footer-right .volume{
+    margin-right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-right .volume i{
+    color: white;
+    font-size: 14px;
+}
+
+.volume-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.volume-bar hr{
+    width: 90px;
+    height: 4px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+/* fine container media navbar */
 
 
 
@@ -438,6 +485,11 @@ footer .container-media{
     .menù-links ul{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    /* barra musicale in footer */
+    .music-bar hr{
+        width: 100px;
     }
 }
 
@@ -509,11 +561,16 @@ footer .container-media{
 
     .install .download h6,
     .artist h6,
-    hr{
+    #line{
         display: none;
     }
 
     .download{
         margin-top: 465px;
+    }
+
+    /* barra musicale in footer */
+    .music-bar hr{
+        width: 80px;
     }
 }
