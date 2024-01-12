@@ -305,9 +305,21 @@ footer .container-media{
     background-color: #282828;
 }
 
-footer .container-media p{
-    color: red;
+.container-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.album-song{
+    display: flex;
+}
+
+.album-song img {
+    width: 40px;
+    margin-left: 10px;
+}
+
 /* fine container medi navbar */
 
 
@@ -354,8 +366,6 @@ footer .container-media p{
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
-        width: calc(100% / 2 * 2);
-        justify-content: flex-start;
     }
 
     .played-second-row{
@@ -405,6 +415,29 @@ footer .container-media p{
         display: none;
     }
 
+    .played-first-row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .played-first-row .image-album{
+        width: calc(100% / 2 - 5px / 2 * 1);
+    }
+
+    .played-second-row{
+        display: flex;
+        gap: 5px;
+        width: 350px;
+    }
+
+
+    .played-third-row{
+        display: flex;
+        gap: 5px;
+        width: 350px;
+    }
+
     .playlist{
         display: none;
     }
@@ -415,7 +448,7 @@ footer .container-media p{
 
     #button{
         position: absolute;
-        right: 110px;
+        right: 90px;
         top: 25px;
     }
 
