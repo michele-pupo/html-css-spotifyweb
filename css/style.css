@@ -6,7 +6,7 @@
 /* reset */
 
 body{
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -42,8 +42,13 @@ body{
 
 #button{
     position: absolute;
-    right: 200px;
+    right: 205px;
     top: 25px;
+    transition: transform 0.3s;
+}
+
+#button:hover{
+    transform: scale(1.1);
 }
 
 button{
@@ -165,10 +170,6 @@ h6:hover{
     font-size: 10px;
 }
 
-.playlist-name ul li a:hover{
-    padding-left: 10px;
-    border-left: solid 4px #81b71a;
-}
 
 .playlist-name ul li a{
     color: rgba(153, 153, 153, .7);
@@ -177,6 +178,8 @@ h6:hover{
 
 .playlist-name ul li a:hover{
     color: white;
+    padding-left: 5px;
+    border-left: solid 4px #81b71a;
 }
 
 .install{
@@ -259,6 +262,8 @@ hr{
 
 .menù-links ul li a:hover{
     color: white;
+    border-bottom: solid 4px #81b71a;
+    padding-bottom: 5px;
 }
 
 h1{
@@ -350,7 +355,7 @@ h3{
 
 
 /* container media navbar */
-/* footer left */
+/* footer sinistra */
 footer .container-media{
     height: 90px;
     width: 100%;
@@ -371,13 +376,21 @@ footer .container-media{
     align-items: center;
 }
 
-.album-song img {
+.album-song img{
     width: 40px;
     margin-left: 10px;
 }
 
+.album-song img:hover{
+    filter: opacity(.4);
+}
+
 .album-small-text{
     margin-left: 10px;
+}
+
+.album-small-text a{
+    text-decoration: none;
 }
 
 .album-small-text h3{
@@ -392,9 +405,32 @@ footer .container-media{
     margin-top: 2px;
 }
 
-.heart{
+.album-small-text h3:hover{
+    text-decoration: underline;
+}
+
+.album-small-text h4:hover{
+    text-decoration: underline;
+}
+
+.heart a{
     color: #6d6d6d;
     margin-left: 10px;
+}
+
+.heart a:hover{
+    color: white; 
+}
+
+
+/* footer centrale */
+.footer-central{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .music-bar{
@@ -412,15 +448,6 @@ footer .container-media{
     border-radius: 2px;
 }
 
-/* footer centrale */
-.footer-central{
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
 .music-buttons{
     display: flex;
     align-items: center;
@@ -428,8 +455,14 @@ footer .container-media{
     color: white;
 }
 
-.music-buttons i{
+.music-buttons a{
+    color: white;
     font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.music-buttons a:hover{
+    transform: scale(1.3);
 }
 
 .music-buttons .fa-play{
@@ -457,9 +490,14 @@ footer .container-media{
     gap: 10px;
 }
 
-.footer-right .volume i{
+.footer-right .volume a{
     color: white;
     font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.footer-right .volume a:hover{
+    transform: scale(1.3);
 }
 
 .volume-bar{
