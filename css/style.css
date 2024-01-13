@@ -133,26 +133,28 @@ button{
     align-items: center;
 }
 
-.playlist .create button{
-    padding: 0px 8px;
-    border-radius: 0px;
-    background-color: #6d6d6d;
+.playlist .create a{
+    padding: 0px 10px;
+    background-color: rgba(153, 153, 153, .7);
     border-color: transparent;
     color: black;
-    font-size: 25px;
+    font-size: 35px;
+    text-decoration: none;
+    transition: transform 0.3s;
 }
 
-.playlist .create button:hover{
-    color: white;
+.playlist .create a:hover{
+    background-color: white;
+    transform: scale(1.1);
 }
 
-h6{
+.install .download h6{
     font-size: 12px;
     color: #6d6d6d;
     padding-left: 10px;
 }
 
-h6:hover{
+.install .download h6:hover{
     color: white;
 }
 
@@ -184,12 +186,19 @@ h6:hover{
 
 .install{
     padding-left: 10px;
-    margin-top: 180px;
+    margin-top: 170px;
+}
+
+.download a{
+    transition: transform 0.3s; 
+}
+
+.download a:hover{
+    transform: scale(1.1);
 }
 
 .download{
     display: flex;
-    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -212,9 +221,19 @@ hr{
     margin-top: 15px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    transition: transform 0.5s;
 }
 
-.artist img{
+.artist:hover{
+    transform: scale(1.15);
+}
+
+.artist a h6{
+    margin-left: 10px;
+}
+
+.artist a img{
     margin-left: 10px;
     background-color: #6d6d6d;
     border-radius: 50%;
@@ -222,8 +241,9 @@ hr{
     height: 23px;
 }
 
-.artist h6{
+.artist a{
     color: white;
+    text-decoration: none;
 }
 /* fine scrollbar laterale */
 
@@ -647,7 +667,7 @@ footer .container-media{
 
     #button{
         position: absolute;
-        right: 90px;
+        right: 100px;
         top: 25px;
     }
 
@@ -658,7 +678,7 @@ footer .container-media{
     }
 
     .download{
-        margin-top: 465px;
+        margin-top: 450px;
     }
 
     /* barra musicale in footer */
