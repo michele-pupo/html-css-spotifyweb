@@ -157,7 +157,7 @@ button{
 .playlist-name{
     padding-left: 20px;
     margin-top: 20px;
-    height: calc(100vh - 455px);
+    height: calc(100vh - 520px);
     overflow-y: auto;
 }
 
@@ -191,7 +191,7 @@ button{
 
 .install{
     padding-left: 10px;
-    margin-top: 170px;
+    margin-top: 30px;
 }
 
 .download a{
@@ -789,7 +789,7 @@ footer .container-media{
     }
 
     .download{
-        margin-top: 450px;
+        margin-top: 460px;
     }
 
     .music-buttons{
