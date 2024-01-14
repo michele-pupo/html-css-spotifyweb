@@ -157,7 +157,7 @@ button{
 .playlist-name{
     padding-left: 20px;
     margin-top: 20px;
-    height: calc(100vh - 650px);
+    height: calc(100vh - 455px);
     overflow-y: auto;
 }
 
