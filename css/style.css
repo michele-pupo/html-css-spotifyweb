@@ -570,7 +570,7 @@ footer .container-media{
 
 /* footer destra */
 .footer-right .volume{
-    margin-right: 10px;
+    margin-right: 5px;
     display: flex;
     gap: 10px;
 }
@@ -593,7 +593,6 @@ footer .container-media{
 
 .volume-scroll{
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
 }
 
@@ -611,7 +610,7 @@ footer .container-media{
     height: 2px;
     border: rgba(153, 153, 153, .7) 2px solid;
     border-radius: 2px;
-    width: 80px;
+    width: 60px;
     margin-right: 10px;
 }
 
@@ -699,38 +698,20 @@ footer .container-media{
         flex-wrap: wrap;
     }
 
+    .footer-right .volume{
+        gap: 5px;
+    }
+
     /* barra musicale in footer */
     #play{
-        height: 2px;
-        border: white 2px solid;
-        border-radius: 2px;
         width: 40px;
-        display: flex;
-        align-items: center;
-        margin-left: 10px;
     }
     
     #stop{
-        height: 2px;
-        border: rgba(153, 153, 153, .7) 2px solid;
-        border-radius: 2px;
         width: 80px;
-        margin-right: 10px;
-    }
-    
-    #play:hover{
-        border: #81b71a 2px solid;
-    }
-    
-    #bar{
-        display: flex;
-        align-items: center;
     }
     
     .music-bar #bar a{
-        font-size: 15px;
-        color:white;
-        position: relative;
         left: 30px;
     }
 }
@@ -811,38 +792,37 @@ footer .container-media{
         margin-top: 450px;
     }
 
+    .music-buttons{
+        gap: 10px;
+    }
+
+    .footer-right .volume{
+        gap: 5px;
+    }
+
     /* barra musicale in footer */
     #play{
-        height: 2px;
-        border: white 2px solid;
-        border-radius: 2px;
         width: 20px;
-        display: flex;
-        align-items: center;
-        margin-left: 10px;
     }
     
     #stop{
-        height: 2px;
-        border: rgba(153, 153, 153, .7) 2px solid;
-        border-radius: 2px;
         width: 50px;
-        margin-right: 10px;
     }
-    
-    #play:hover{
-        border: #81b71a 2px solid;
-    }
-    
-    #bar{
-        display: flex;
-        align-items: center;
-    }
-    
+   
     .music-bar #bar a{
-        font-size: 15px;
-        color:white;
-        position: relative;
         left: 15px;
+    }
+
+    /* barra volume in footer */
+    #down{
+        width: 10px;
+    }
+    
+    #up{
+        width: 40px;
+    }
+
+    .volume-scroll #down a{
+        left: 5px;
     }
 }
