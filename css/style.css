@@ -504,6 +504,16 @@ footer .container-media{
     border-radius: 2px;
 }
 
+.music-bar hr::before{
+    /* position: absolute; */
+  left: 0;
+  top: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+  transition: background .5s
+}
+
 .music-buttons{
     display: flex;
     align-items: center;
@@ -525,9 +535,27 @@ footer .container-media{
     font-size: 30px;
 }
 
+#bar{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.music-bar #bar a{
+    font-size: 20px;
+    color:white;
+    position: relative;
+    left: 120px;
+}
+
+.music-bar #bar a:hover{
+    transform: scale(1.1)
+}
+
 .bar-music{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .bar-music span{
