@@ -16,8 +16,12 @@ body{
 }
 
 .logo{
-    width: 150px;
+    width: 120px;
     padding: 20px 0px 0px 20px;
+}
+
+.scrollbar .logo img{
+    margin-bottom: 30px;
 }
 
 .logo-mobile{
@@ -65,10 +69,6 @@ button{
 .scrollbar{
     min-width: 175px;
     background-color: #000000;
-}
-
-.scrollbar .logo img{
-    margin-bottom: 30px;
 }
 
 #home, 
@@ -179,26 +179,30 @@ button{
     border-left: solid 4px #81b71a;
 }
 
+.install .download a{
+    text-decoration: none;
+}
+
 .install .download h6{
     font-size: 12px;
     color: #6d6d6d;
     padding-left: 10px;
 }
 
-.install .download h6:hover{
+.install .download a h6:hover{
     color: white;
 }
 
 .install{
     padding-left: 10px;
-    margin-top: 30px;
+    margin-top: 42px;
 }
 
-.download a{
+.install .download{
     transition: transform 0.3s; 
 }
 
-.download a:hover{
+.install .download:hover{
     transform: scale(1.1);
 }
 
@@ -384,7 +388,7 @@ h3{
     margin-top: 5px;
     margin-bottom: 30px;
 }
-/* inizo stilizzazione sezione album seconda fila */
+/* fine stilizzazione sezione album seconda fila */
 
 
 /* inizo stilizzazione sezione album terza fila */
@@ -407,7 +411,7 @@ h3{
     font-size: 10px;
     margin-bottom: 30px;
 }
-/* inizo stilizzazione sezione album terza fila */
+/* fine stilizzazione sezione album terza fila */
 
 
 /* container media navbar */
@@ -566,7 +570,6 @@ footer .container-media{
 .music-bar #bar a:hover{
     transform: scale(1.1)
 }
-
 
 
 /* footer destra */
@@ -792,6 +795,10 @@ footer .container-media{
 
     .download{
         margin-top: 460px;
+    }
+
+    .download a img{
+        margin-left: 14px;
     }
 
     .music-buttons{
