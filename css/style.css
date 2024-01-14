@@ -489,29 +489,22 @@ footer .container-media{
     gap: 15px;
 }
 
+.bar-music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.bar-music span{
+    color: white;
+    font-size: 10px;
+}
+
 .music-bar{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.music-bar hr{
-    width: 250px;
-    height: 4px;
-    margin-right: 20px;
-    margin-left: 20px;
-    border: 2px solid white;
-    border-radius: 2px;
-}
-
-.music-bar hr::before{
-    /* position: absolute; */
-  left: 0;
-  top: 0;
-  height: 4px;
-  border-radius: 2px;
-  background: #fff;
-  transition: background .5s
 }
 
 .music-buttons{
@@ -535,33 +528,44 @@ footer .container-media{
     font-size: 30px;
 }
 
+#play{
+    height: 2px;
+    border: white 2px solid;
+    border-radius: 2px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#stop{
+    height: 2px;
+    border: rgba(153, 153, 153, .7) 2px solid;
+    border-radius: 2px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#play:hover{
+    border: #81b71a 2px solid;
+}
+
 #bar{
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
 }
 
 .music-bar #bar a{
-    font-size: 20px;
+    font-size: 15px;
     color:white;
     position: relative;
-    left: 120px;
+    left: 90px;
 }
 
 .music-bar #bar a:hover{
     transform: scale(1.1)
 }
 
-.bar-music{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bar-music span{
-    color: white;
-    font-size: 10px;
-}
 
 
 /* footer destra */
@@ -587,13 +591,48 @@ footer .container-media{
     justify-content: center;
 }
 
-.volume-bar hr{
-    width: 90px;
-    height: 4px;
-    margin-right: 0px;
-    margin-left: 0px;
-    border: 2px solid white;
+.volume-scroll{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+#down{
+    height: 2px;
+    border: white 2px solid;
     border-radius: 2px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#up{
+    height: 2px;
+    border: rgba(153, 153, 153, .7) 2px solid;
+    border-radius: 2px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+#down:hover{
+    border: #81b71a 2px solid;
+}
+
+#volume{
+    display: flex;
+    align-items: center;
+}
+
+.volume-scroll #down a{
+    font-size: 8px;
+    color:white;
+    position: relative;
+    left: 15px;
+}
+
+.volume-scroll #down a:hover{
+    transform: scale(1.5)
 }
 /* fine container media navbar */
 
@@ -661,8 +700,38 @@ footer .container-media{
     }
 
     /* barra musicale in footer */
-    .music-bar hr{
-        width: 100px;
+    #play{
+        height: 2px;
+        border: white 2px solid;
+        border-radius: 2px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+    #stop{
+        height: 2px;
+        border: rgba(153, 153, 153, .7) 2px solid;
+        border-radius: 2px;
+        width: 80px;
+        margin-right: 10px;
+    }
+    
+    #play:hover{
+        border: #81b71a 2px solid;
+    }
+    
+    #bar{
+        display: flex;
+        align-items: center;
+    }
+    
+    .music-bar #bar a{
+        font-size: 15px;
+        color:white;
+        position: relative;
+        left: 30px;
     }
 }
 
@@ -743,7 +812,37 @@ footer .container-media{
     }
 
     /* barra musicale in footer */
-    .music-bar hr{
-        width: 80px;
+    #play{
+        height: 2px;
+        border: white 2px solid;
+        border-radius: 2px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+    #stop{
+        height: 2px;
+        border: rgba(153, 153, 153, .7) 2px solid;
+        border-radius: 2px;
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    #play:hover{
+        border: #81b71a 2px solid;
+    }
+    
+    #bar{
+        display: flex;
+        align-items: center;
+    }
+    
+    .music-bar #bar a{
+        font-size: 15px;
+        color:white;
+        position: relative;
+        left: 15px;
     }
 }
