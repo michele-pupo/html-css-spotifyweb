@@ -313,6 +313,12 @@ h1{
 
 .image-album img{
     width: 100%;
+    filter: opacity(1);
+    transition: filter .5s;
+}
+
+.image-album img:hover{
+    filter: opacity(.3);
 }
 
 .album-text{
