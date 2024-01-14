@@ -517,7 +517,7 @@ footer .container-media{
 .music-buttons a{
     color: white;
     font-size: 14px;
-    transition: transform 0.3s;
+    transition: transform 0.8s;
 }
 
 .music-buttons a:hover{
@@ -560,6 +560,7 @@ footer .container-media{
     color:white;
     position: relative;
     left: 90px;
+    transition: transform 0.8s;
 }
 
 .music-bar #bar a:hover{
@@ -628,6 +629,7 @@ footer .container-media{
     color:white;
     position: relative;
     left: 15px;
+    transition: transform 0.8s;
 }
 
 .volume-scroll #down a:hover{
