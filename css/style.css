@@ -67,6 +67,9 @@ button{
 
 /* scrollbar laterale */
 .scrollbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-width: 175px;
     background-color: #000000;
 }
@@ -415,7 +418,7 @@ h3{
 
 
 /* container media navbar */
-/* footer sinistra */
+
 footer .container-media{
     height: 90px;
     width: 100%;
@@ -431,8 +434,12 @@ footer .container-media{
     align-items: center;
 }
 
+
+/* footer sinistra */
 .footer-left{
+    width: 25%;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -573,6 +580,12 @@ footer .container-media{
 
 
 /* footer destra */
+.footer-right{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .footer-right .volume{
     margin-right: 5px;
     display: flex;
@@ -719,11 +732,27 @@ footer .container-media{
     .music-bar #bar a{
         left: 30px;
     }
+
+    /* barra volume in footer */
+    #down{
+        width: 10px;
+    }
+    
+    #up{
+        width: 40px;
+    }
+
+    .volume-scroll #down a{
+        left: 5px;
+    }
 }
 
 /* versione mobile */
 @media screen and (max-width: 480px){
     .scrollbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         min-width: 50px;
     }
 
@@ -735,6 +764,10 @@ footer .container-media{
 
     .logo{
         display: none;
+    }
+
+    .button-left{
+        margin-top: 0px;
     }
 
     #home h6,
@@ -791,7 +824,7 @@ footer .container-media{
     }
 
     .download{
-        margin-top: 450px;
+        margin-top: 40px;
     }
 
     .download a img{
