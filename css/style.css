@@ -541,7 +541,7 @@ footer .container-media{
 
 #play{
     height: 2px;
-    border: rgba(153, 153, 153, .7) 2px solid;
+    border: white 2px solid;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     width: 100px;
@@ -575,6 +575,14 @@ footer .container-media{
     position: relative;
     left: -2px;
     transition: transform 1s;
+}
+
+.music-bar #bar a{
+    display: none;
+}
+
+.music-bar #bar:hover a{
+    display: block;
 }
 
 .music-bar #bar a:hover{
@@ -613,7 +621,7 @@ footer .container-media{
 
 #down{
     height: 2px;
-    border: rgba(153, 153, 153, .7) 2px solid;
+    border: white 2px solid;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     width: 20px;
@@ -641,11 +649,19 @@ footer .container-media{
 }
 
 .volume-scroll #down a{
+    display: none;
+}
+
+.volume-scroll #down a{
     font-size: 8px;
     color:white;
     position: relative;
     left: -5px;
     transition: transform 1s;
+}
+
+.volume-scroll #down:hover a{
+    display: block;
 }
 
 .volume-scroll #down a:hover{
@@ -663,26 +679,28 @@ footer .container-media{
     .played-first-row{
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
-        justify-content: flex-start;
+        gap: 25px;
+        justify-content: flex-start
     }
 
     .played-first-row .image-album{
-        width: 120px;
+        width: calc(100% / 5);
+    }
+
+    .played-second-row .image-album{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: calc(100% / 5);
+    }
+
+    .played-third-row .image-album{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: calc(100% / 5);
     }
     
-    .played-second-row{
-        display: flex;
-        gap: 5px;
-        width: 850px;
-    }
-
-    .played-third-row{
-        display: flex;
-        gap: 5px;
-        width: 850px;
-    }
-
     .menù-links ul{
         display: flex;
         flex-wrap: wrap;
@@ -696,19 +714,31 @@ footer .container-media{
     .played-first-row{
         display: flex;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 25px;
+        justify-content: flex-start;
     }
 
     .played-second-row{
-        display: flex;
-        gap: 5px;
-        width: 850px;
+        justify-content: flex-start;
     }
 
-    .played-third-row{
+
+    .played-first-row .image-album{
+        width: calc((100% / 4))
+    }
+
+    .played-second-row .image-album{
         display: flex;
+        flex-direction: column;
         gap: 5px;
-        width: 850px;
+        width: calc((100% / 4))
+    }
+
+    .played-third-row .image-album{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: calc((100% / 4))
     }
 
     .menù-links ul{
@@ -746,7 +776,7 @@ footer .container-media{
 
     .volume-scroll #down a:hover{
     transform: translateX(10px);
-}
+    }
 }
 
 /* versione mobile */
@@ -784,7 +814,16 @@ footer .container-media{
 
     .played-first-row{
         display: flex;
-        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .played-second-row{
+        display: flex;
+        gap: 5px;
+    }
+
+    .played-third-row{
+        display: flex;
         gap: 5px;
     }
 
@@ -792,17 +831,12 @@ footer .container-media{
         width: calc(100% / 2 - 5px / 2 * 1);
     }
 
-    .played-second-row{
-        display: flex;
-        gap: 5px;
-        width: 1100px;
+    .played-second-row .image-album{
+        width: calc(100% / 2 - 5px / 2 * 1);
     }
 
-
-    .played-third-row{
-        display: flex;
-        gap: 5px;
-        width: 1100px;
+    .played-third-row .image-album{
+        width: calc(100% / 2 - 5px / 2 * 1);
     }
 
     .playlist{
@@ -865,4 +899,5 @@ footer .container-media{
 
     .volume-scroll #down a:hover{
         transform: translateX(10px);
+    }
 }
