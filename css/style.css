@@ -98,24 +98,24 @@ button{
     width: 30px;
 }
 
-#home h6,
-#search h6,
-#librery h6{
-    color: rgba(153, 153, 153, .7);
+#home a h6,
+#search a h6,
+#librery a h6{
+    color: white;
     font-size: 10px;
+    margin-left: 10px;
 }
 
-#home h6:hover{
-    color: white;
+#home a,
+#search a,
+#librery a{
+    text-decoration: none;
 }
 
-#search h6:hover{
-    color: white;
+#home a h6{
+    margin-top: 7px;
 }
 
-#librery h6:hover{
-    color: white;
-}
 
 .playlist{
     padding-left: 20px;
@@ -737,17 +737,14 @@ footer .container-media{
         display: none;
     }
 
-    #home,
-    #search,
-    #librery{
-        padding-left: 0px ;
-        justify-content: space-around;
-    }
-
     #home h6,
     #search h6,
     #librery h6{
         display: none;
+    }
+
+    #home{
+        margin-top: 30px;
     }
 
     .played-first-row{
@@ -794,7 +791,7 @@ footer .container-media{
     }
 
     .download{
-        margin-top: 460px;
+        margin-top: 450px;
     }
 
     .download a img{
